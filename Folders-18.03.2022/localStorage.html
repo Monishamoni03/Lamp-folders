@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="storage"></div>
+        <script>
+            if(typeof(Storage)!==undefined){
+                localStorage.setItem("name","sai ram");
+                document.getElementById("storage").innerHTML=localStorage.getItem("name");
+            }else{
+                document.getElementById("storage").innerHTML="Browser not supported";
+            }
+        </script>
+    </body>
+</html>
