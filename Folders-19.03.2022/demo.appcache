@@ -1,0 +1,8 @@
+cache manifest
+#date 2022-03-20
+cache:
+css/style.css
+network:
+*
+fallback:
+#static.html
