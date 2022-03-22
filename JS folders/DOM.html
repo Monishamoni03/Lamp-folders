@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            console.log(document.body);   //null because body have not loaded yet
+        </script>
+    </head>
+    <body>
+        <div class="greetings">Welcome</div>
+        <ul>
+            <li>Maths</li>
+            <li>French</li>
+        </ul>
+        <ul>
+            <li>English</li>
+            <li>Tamil</li>
+        </ul>
+        <div>Thank You</div>
+        <script>
+            console.log(document.body.childNodes);  //shows the childnode of body including space text
+            console.log(document.documentElement.parentElement);   //null  [no parent element]
+            console.log(document.documentElement.parentNode);   //returns the document
+            console.log(document.body.parentElement);   //returns the html element
+            console.log(document.body.parentNode);   //returns the html element
+            for(let elements of document.body.children){
+                console.log(elements);   //it shows only the elements
+            }
+            for(let nodes of document.body.childNodes){
+                console.log(nodes);   //it shows only the child nodes of body from the collection
+            }
+            for(let i=0;i<document.body.childNodes.length;i++){
+                console.log(document.body.childNodes[i]);
+            }
+            console.log(document.body.firstElementChild);  //
+            console.log(document.body.children[0]);
+            console.log(document.body.childNodes[1]);   //1st node is space then next node is the element
+        </script>
+    </body>
+</html>
