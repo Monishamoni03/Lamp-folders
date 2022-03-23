@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div></div>
+        <p></p>
+        <div></div>
+        <script>
+            let content=document.getElementsByTagName('p')[0].textContent;
+            document.getElementsByTagName('p')[0].textContent=document.getElementsByTagName('div')[1].textContent;
+            document.getElementsByTagName('div')[1].textContent=content;
+        </script>
+    </body>
+</html>
