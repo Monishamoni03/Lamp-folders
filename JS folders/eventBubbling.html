@@ -1,0 +1,21 @@
+<!DOCTYPE html>  
+<html>  
+  <head>
+    <title>Event Bubbling</title>       <!--it will start from child element-->
+  </head>
+<body>  
+  <div id="parentId">  
+    <button id="childId">Child button</button>  
+  </div>  
+  <script>  
+    var parent=document.getElementById('parentId');
+    parent.addEventListener('click',function(){
+      console.log("Parent");           //2nd parent is invoked
+    });
+    var child=document.getElementById('childId');
+    child.addEventListener('click',function(){
+      console.log("Child");         //1st child is invoked
+    });
+  </script>  
+</body>  
+</html>
